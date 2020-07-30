@@ -51,7 +51,7 @@ def start_from_mainmenu(menuid, **kwargs):
 
 
 def start_from_pluginmenu(session, **kwargs):
-	import ui
+	from Plugins.Extensions.FileCommander import ui
 	session.openWithCallback(exit, ui.FileCommanderScreen)
 
 

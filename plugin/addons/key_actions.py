@@ -44,12 +44,12 @@ import re
 import os
 
 # Addons
-from unrar import RarMenuScreen
-from tar import TarMenuScreen
-from unzip import UnzipMenuScreen
-from gz import GunzipMenuScreen
-from ipk import ipkMenuScreen
-from type_utils import ImageViewer, MoviePlayer, vEditor
+from Plugins.Extensions.FileCommander.addons.unrar import RarMenuScreen
+from Plugins.Extensions.FileCommander.addons.tar import TarMenuScreen
+from Plugins.Extensions.FileCommander.addons.unzip import UnzipMenuScreen
+from Plugins.Extensions.FileCommander.addons.gz import GunzipMenuScreen
+from Plugins.Extensions.FileCommander.addons.ipk import ipkMenuScreen
+from Plugins.Extensions.FileCommander.addons.type_utils import ImageViewer, MoviePlayer, vEditor
 
 # for locale (gettext)
 from . import _, ngettext
