@@ -686,7 +686,7 @@ class key_actions(stat_info):
 		testFileName = filename.lower()
 		filetype = os.path.splitext(testFileName)[1]
 		longname = sourceDir + filename
-		print "[Filebrowser]:", filename, sourceDir, testFileName
+		print("[Filebrowser]:", filename, sourceDir, testFileName)
 		if not fileExists(longname):
 			self.session.open(MessageBox, _("File not found: %s") % longname, type=MessageBox.TYPE_ERROR, simple=True)
 			return
@@ -798,6 +798,6 @@ class key_actions(stat_info):
 
 	def onFileActionCB(self, result):
 		# os.system('echo %s > /tmp/test.log' % (result))
-		# print result
+		# print(result)
 		self.SOURCELIST.refresh()
 		self.TARGETLIST.refresh()

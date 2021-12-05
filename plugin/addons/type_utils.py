@@ -188,9 +188,9 @@ class vEditor(Screen, HelpableScreen):
 					if sw > w:
 						if end: # editation from end
 							l = len(text)
-							for i, idx in enumerate(text):
+							for i,idx in enumerate(text):
 								x = text[l - i:]
-								print x
+								print(x)
 								if getStringSize(x, label) >= w:
 									return i
 							return i
@@ -460,7 +460,7 @@ class ImageViewer(Screen, HelpableScreen):
 		self["status"].show()
 
 	def cbSlideShow(self):
-		print "slide to next Picture index=" + str(self.lsatIndex)
+		print("slide to next Picture index=" + str(self.lsatIndex))
 		if not config.pic.loop.value and self.lsatIndex == self.fileListLen:
 			self.PlayPause()
 		self.displayNow = True
