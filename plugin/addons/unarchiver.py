@@ -85,7 +85,7 @@ class ArchiverMenuScreen(Screen):
 
 	def onLayout(self):
 		self.setTitle(self.pname)
-		self.chooseMenuList.setList(map(self.ListEntry, self.list))
+		self.chooseMenuList.setList(list(map(self.ListEntry, self.list)))
 
 	def ListEntry(self, entry):
 		x, y, w, h = skin.parameters.get("FcFileListName", (10, 0, 1180, 25))
