@@ -1256,6 +1256,7 @@ class FileCommanderScreen(Screen, HelpableScreen, key_actions):
 			filename = self[side].getFilename()
 			if dir is not None:
 				self[side + "_head1"].text = cutLargePath(dir, self[side + "_head1"])
+				self[side + "_head2"].setList(self.statInfo(self[side]))
 				self[side + "_head2"].updateList(self.statInfo(self[side]))
 				self[side + "_free"].text = "%s" % freeDiskSpace(dir) + self.walkdirflag
 			elif not dir and filename:
